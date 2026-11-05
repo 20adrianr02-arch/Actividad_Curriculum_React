@@ -12,7 +12,7 @@ Este proyecto consiste en el desarrollo de un Currículum Vitae profesional e in
 ## 📸 Vista Previa del Proyecto
 
 <p align="center">
-  <img src="./assets/Curriculum.png" alt="Captura del CV" width="850"/>
+  <img src="./src/assets/Curriculum.png"" alt="Captura del CV" width="850"/>
 </p>
 
 ---
