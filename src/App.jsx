@@ -17,7 +17,7 @@ function App() {
         <div className="header-info">
           <h1>Adrian Rodriguez Machado</h1>
           <h2>Intern Software Developer en Ibercaja Gestión | DAM Student</h2>
-          <p> linkedin.com/in/adrianrodriguezdam |  Zaragoza, Aragón, España</p>
+          <p> adrian.rodriguez@ejemplo.com |  linkedin.com/in/adrianrodriguezdam |  Zaragoza, Aragón, España</p>
         </div>
       </div>
 
@@ -67,6 +67,7 @@ function App() {
           {/* INFORMACION SOBRE  EXPERIENCIA */}
           <div className="seccion">
             <h2 className="titulo-seccion">Experiencia</h2>
+            
             <div className="item-experiencia">
               <div className="item-encabezado">
                 <h3>Intern Software Developer</h3>
@@ -74,6 +75,15 @@ function App() {
               </div>
               <p className="empresa">Ibercaja Gestión (Contrato de formación)</p>
               <p>Desarrollo de software y soluciones técnicas backend en entorno financiero profesional presencial.</p>
+            </div>
+
+            <div className="item-experiencia">
+              <div className="item-encabezado">
+                <h3>Operador Logístico / Soporte Técnico</h3>
+                <span className="badge-fecha">Mar. 2024 - Mar. 2026</span>
+              </div>
+              <p className="empresa">Inditex Plataforma Europa</p>
+              <p>Operaciones y optimización de procesos logísticos en centro de distribución internacional de alta demanda.</p>
             </div>
           </div>
 
