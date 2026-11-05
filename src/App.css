@@ -1,0 +1,186 @@
+/* ESTILOS GENERALES DEL BODY: DEFINE EL FONDO GRIS CLARO, LA FUENTE DEL SISTEMA, ETC */
+body {
+  background-color: #f1f5f9;
+  min-height: 100vh;
+  padding: 30px 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  color: #334155;
+}
+
+/* LIMITA EL ANCHO A 1050PX, LO CENTRA EN LA PANTALLA Y DA 
+FORMA DE TARJETA CON FONDO BLANCO, BORDES REDONDEADOS Y SOMBRA */
+.contenedor-principal {
+  max-width: 1050px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* ENCABEZADO, FONDO DEGRADADO, QUE ALINEA Y CENTRA LA FOTO Y LOS DATOS PERSONALES  */
+.header {
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border-bottom: 1px solid #e2e8f0;
+  color: #0f172a;
+  padding: 40px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  text-align: left;
+}
+
+/* MUESTRA LA IMAGEN DE FORMA CIRCULAR, SIN DEFORMARSE (OBJECT-FIT), CON BORDE Y SOMBRA */
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #e2e8f0;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* TÍTULO PRINCIPAL EN TAMAÑO GRANDE, NEGRITA Y COLOR OSCURO */
+.header-info h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #0f172a;
+}
+
+/*  SUBTÍTULO EN TAMAÑO MEDIANO Y DESTACADO EN COLOR LLAMATIVO */
+.header-info h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4f46e5;
+  margin: 0 0 12px 0;
+}
+
+/* TEXTO DESCRIPTIVO MÁS PEQUEÑO Y EN GRIS */
+.header-info p {
+  font-size: 13.5px;
+  margin: 0;
+  color: #64748b;
+}
+
+/* CONTENEDOR PRINCIPAL QUE DISTRIBUYE EL CV EN DOS COLUMNAS */
+.cuerpo {
+  display: flex;
+  padding: 30px;
+  gap: 40px;
+}
+
+/* COLUMNA LATERAL IZQUIERDA, QUE OCUPA UN ANCHO FIJO PROPORCIONAL DEL 38% DEL TOTAL */
+.columna-izquierda {
+  flex: 0 0 38%;
+}
+
+/* COLUMNA LATERAL DERECHA: SE EXPADE DINÁMICAMENTE PARA TOMAR EL RESTO DEL ESPACIO (62%) */
+.columna-derecha {
+  flex: 1;
+}
+
+/*  SEPARA CADA BLOQUE DE CONTENIDO CON UN MARGEN INFERIOR */
+.seccion {
+  margin-bottom: 28px;
+}
+
+/* DEFINE EL FORMATO  DE LOS ENCABEZADOS DE CADA APARTADO */
+.titulo-seccion {
+  font-size: 17px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 14px 0;
+  letter-spacing: 0.3px;
+}
+
+/* TEXTO INFORMATIVO  */
+.seccion p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #475569;
+  margin: 4px 0;
+}
+
+/* CONTENEDOR DE HABILIDADES, EL CUAL AGRUPA LAS ETIQUETAS */
+.lista-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* MUESTRA CADA HABILIDAD COMO UN BOTÓN O BADGE CON BORDES REDONDEADOS  */
+.habilidad {
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 12.5px;
+  color: #334155;
+}
+
+/* CREA UNA LÍNEA VERTICAL A LA IZQUIERDA */
+.item-experiencia {
+  border-left: 3px solid #cbd5e1;
+  padding-left: 16px;
+  margin-bottom: 22px;
+}
+
+/* ALINEA EL PUESTO A LA IZQUIERDA Y LA FECHA A LA DERECHA EN UNA SOLA LÍNEA */
+.item-encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* FORMATO PARA EL NOMBRE DEL PUESTO */
+.item-encabezado h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  color: #0f172a;
+}
+
+/* RESALTA EL NOMBRE DE LA COMPAÑÍA */
+.empresa {
+  color: #4f46e5 !important;
+  font-weight: 600;
+  font-size: 13px;
+  margin: 4px 0 6px 0 !important;
+}
+
+/*  MUESTRA EL PERÍODO DE TIEMPO EN UN CONTENEDOR GRIS PARA QUE RESALTE */
+.badge-fecha {
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+/* MUESTRA CAJAS, CON FONDO PARA MOSTRAR LOS PROYECTOS O CERTIFICACIONES */
+.tarjeta-caja {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+
+/* FORMATO DEL NOMBRE DEL PROYECTO Y LA CERTIFICACIÓN */
+.tarjeta-caja h3 {
+  font-size: 14.5px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #0f172a;
+}
