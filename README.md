@@ -9,6 +9,14 @@ Este proyecto consiste en el desarrollo de un Currículum Vitae profesional e in
 
 ---
 
+## 📸 Vista Previa del Proyecto
+
+<p align="center">
+  <img src="./assets/Curriculum.png" alt="Captura del CV" width="850"/>
+</p>
+
+---
+
 ## 📌 Descripción del Proyecto
 
 Aplicación visual construida en un componente funcional principal (`App.jsx`) que modela el perfil profesional.
